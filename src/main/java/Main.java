@@ -178,14 +178,15 @@ public class Main {
         }
     }
 
-    static void toMoveLeft(int[] arr8, int z) {
-        int y = arr8[0];
-        for (int i = 0; i < arr8.length - 1; i++) {
-            arr8[i] = arr8[i + z];
-            System.out.print(arr8[i] + " ");
+    static int [] toMoveLeft(int[] arr, int z) {
+        int y = arr[0];
+        for (int i = 0; i < arr.length - 1; i++) {
+            arr[i] = arr[i + z];
+            System.out.print(arr[i] + " ");
         }
-        arr8[arr8.length - 1] = y;
-        System.out.print(arr8[arr8.length - 1] + " ");
+        arr[arr.length - 1] = y;
+        System.out.print(arr[arr.length - 1] + " ");
+        return arr;
     }
 
 
@@ -211,15 +212,15 @@ public class Main {
         return sum;
     }
 
-    static void toMoveRight(int[] arr9, int z) {
-        int y = arr9[arr9.length - 1];
-        for (int i = arr9.length - 1; i >= 1; i--) {
-            arr9[i] = arr9[i - z];
+    static int[] toMoveRight(int[] arr, int z) {
+        int y = arr[arr.length - 1];
+        for (int i = arr.length - 1; i >= 1; i--) {
+            arr[i] = arr[i - z];
         }
-        arr9[0] = y;
-        for (Integer d : arr9)
+        arr[0] = y;
+        for (Integer d : arr)
             System.out.print(d + " ");
-
+        return arr;
     }
 }
 

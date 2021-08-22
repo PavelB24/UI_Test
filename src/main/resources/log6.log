@@ -2,18 +2,6 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2021-08-22T18:25:43.149432900Z</date>
-  <millis>1629656743149</millis>
-  <nanos>432900</nanos>
-  <sequence>0</sequence>
-  <logger>Лог теста</logger>
-  <level>INFO</level>
-  <class>MainTest</class>
-  <method>toFindMax</method>
-  <thread>1</thread>
-  <message>Произошла ошибка</message>
-</record>
-<record>
   <date>2021-08-22T18:25:43.198370400Z</date>
   <millis>1629656743198</millis>
   <nanos>370400</nanos>
